@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  	<div class="login-reg-panel">
+		<div class="login-info-box">
+			<h2>Have an account?</h2>
+			<p>Lorem ipsum dolor sit amet</p>
+			<label id="label-register" for="log-reg-show" >Login</label>
+
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+
+		<div class="register-info-box">
+			<h2>Don't have an account?</h2>
+			<p>Lorem ipsum dolor sit amet</p>
+			<label id="label-login" for="log-login-show">Register</label>
+			<input type="radio" name="active-log-panel" id="log-login-show">
+		</div>
+   <form class="" action="index.html" method="post" onsubmit="return validation();">
+		<div class="white-panel">
+			<div class="login-show">
+				<h2>LOGIN</h2>
+				<input type="text" id="email" placeholder="Email">
+        <div class="error">
+
+        </div>
+				<input type="password" id="pass" placeholder="Password">
+        <div class="error">
+
+        </div>
+				<input type="submit" value="Login" >
+				<a href="">Forgot password?</a>
+			</div>
+    </form>
+    <form class="" action="index.html" method="post" onsubmit="return validate();">
+
+			<div class="register-show">
+				<h2>REGISTER</h2>
+				<input type="text" id="email1" placeholder="Email">
+        <div id="error1">
+
+        </div>
+				<input type="password" id="pass1" placeholder="Password">
+        <div id="error2">
+
+        </div>
+				<input type="password" id="confirm" placeholder="Confirm Password">
+        <div id="error3">
+
+        </div>
+				<input type="submit" value="Register">
+			</div>
+		</div>
+     </form>
+	</div>
+
+
+</body>
+<script src="script.js">
+
+</script>
+</html>
